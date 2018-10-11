@@ -1,0 +1,1786 @@
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 12:13:20 +0700
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "blog_development" does not exist
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (1826.9ms)[0m  [1m[35mCREATE DATABASE "blog_development" ENCODING = 'unicode'[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (600.9ms)[0m  [1m[35mCREATE DATABASE "blog_test" ENCODING = 'unicode'[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "blog_development" ENCODING = 'unicode'[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "blog_test" ENCODING = 'unicode'[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (133.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (136.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+Migrating to CreateArticles (20181008140142)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (76.9ms)[0m  [1m[35mCREATE TABLE "articles" ("id" bigserial primary key, "title" character varying, "text" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181008140142_create_articles.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181008140142"]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (18.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+Migrating to CreateComments (20181008141025)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (94.7ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "commenter" character varying, "body" text, "article_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_3bf61a60d3"
+FOREIGN KEY ("article_id")
+  REFERENCES "articles" ("id")
+)[0m
+  ↳ db/migrate/20181008141025_create_comments.rb:3
+  [1m[35m (49.2ms)[0m  [1m[35mCREATE  INDEX  "index_comments_on_article_id" ON "comments"  ("article_id")[0m
+  ↳ db/migrate/20181008141025_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181008141025"]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-09 05:14:54.561536"], ["updated_at", "2018-10-09 05:14:54.561536"]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (14.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 12:15:28 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 12513ms (Views: 12468.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 12:15:46 +0700
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00005577194a52c8@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 12:16:06 +0700
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00005577194a52c8@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 12:16:12 +0700
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00005577194a52c8@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 12:16:17 +0700
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 66ms (Views: 62.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-10-09 12:16:20 +0700
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (69.7ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.6ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_navigation.html.haml (12.3ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.6ms)
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml (9.8ms)
+Completed 200 OK in 1850ms (Views: 625.5ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 12:16:49 +0700
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00005577194a52c8@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 12:16:52 +0700
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00005577194a52c8@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 12:19:22 +0700
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 12:19:24 +0700
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x00005577194a52c8@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 12:19:27 +0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (42.0ms)
+  Rendered articles/new.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 200ms (Views: 117.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 12:19:34 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aQjaOvrezjuDIYXSSE958n5FQCrLeNKelHJi6yFA9qWhNcQrZjDv2mj7D6vOMMLYPfpOc7YIH9gyoAC4mrZZDQ==", "article"=>{"title"=>"hello", "text"=>"hii\r\n"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x00005577194a52c8@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 12:19:34 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aQjaOvrezjuDIYXSSE958n5FQCrLeNKelHJi6yFA9qWhNcQrZjDv2mj7D6vOMMLYPfpOc7YIH9gyoAC4mrZZDQ==", "article"=>{"title"=>"hello", "text"=>"hii\r\n"}, "commit"=>"Create Article"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[36mArticle Create (0.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "hello"], ["text", "hii\r\n"], ["created_at", "2018-10-09 05:19:34.805252"], ["updated_at", "2018-10-09 05:19:34.805252"]]
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (41.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:23
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 51ms (ActiveRecord: 42.5ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-10-09 12:19:34 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (79.6ms)
+  Rendered articles/show.html.erb within layouts/application (197.3ms)
+Completed 200 OK in 317ms (Views: 261.9ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/articles/1/comments" for 127.0.0.1 at 2018-10-09 12:20:12 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iDIdcrlHY4tnffHrLxgmlDpmC+yh7pQa0Hs2cbThgFcX46Q798ZQFzVACpHY6svLGBnQ1848VWGSuRil3S7E6w==", "comment"=>{"commenter"=>"hiii", "body"=>"lalalala"}, "commit"=>"Create Comment", "article_id"=>"1"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (1.4ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", "hiii"], ["body", "lalalala"], ["article_id", 1], ["created_at", "2018-10-09 05:20:12.347628"], ["updated_at", "2018-10-09 05:20:12.347628"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (43.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 54ms (ActiveRecord: 46.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-10-09 12:20:12 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [1 times] (1.6ms)
+  Rendered comments/_form.html.erb (3.6ms)
+  Rendered articles/show.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 83ms (Views: 78.2ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/articles/1/comments/1" for 127.0.0.1 at 2018-10-09 12:20:19 +0700
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LAK93JULLWA5JMFu/IthOFJebSboKExVcAK4btoFPZ2z0wSV24oe/GsZOhQLeYxncCG2HYf6jS4ywJa6s8p5IQ==", "article_id"=>"1", "id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:11
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2 LIMIT $3[0m  [["article_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/comments_controller.rb:13
+  [1m[35m (25.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:13
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 33ms (ActiveRecord: 26.8ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-10-09 12:20:19 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (5.1ms)
+  Rendered articles/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 73ms (Views: 68.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 12:20:32 +0700
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-10-09 12:20:36 +0700
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (35.9ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_secondary_navigation.html.haml (20.4ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_navigation.html.haml (33.9ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.6ms)
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml (7.3ms)
+Completed 200 OK in 299ms (Views: 287.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/article?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-10-09 12:20:39 +0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"article"}
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY articles.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml:95
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (171.6ms)
+Completed 200 OK in 212ms (Views: 197.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/article/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-10-09 12:20:44 +0700
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"article"}
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_field.html.haml (4.1ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_text.html.haml (5.1ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY comments.id desc[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_filtering_multiselect.html.haml:20
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (101.4ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_submit_buttons.html.haml (19.0ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (153.0ms)
+Completed 200 OK in 184ms (Views: 171.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/admin/article/new" for 127.0.0.1 at 2018-10-09 12:20:50 +0700
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kk+nU6GZKEwzrOJokVksc9N/Y6BINAonQRYesZ3Owr3iaKsxJ2AQgZNNeVZPqKlGUjv627O0++bltBMiRNzgxw==", "article"=>{"title"=>"sdfs", "text"=>"sdfasf", "comment_ids"=>["", ""]}, "return_to"=>"http://localhost:3000/admin/article", "_save"=>"", "model_name"=>"article"}
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE 1=0[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_field.html.haml (4.3ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_text.html.haml (2.9ms)
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY comments.id desc[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_filtering_multiselect.html.haml:20
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (15.2ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_submit_buttons.html.haml (19.9ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/application (58.1ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_secondary_navigation.html.haml (8.5ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_navigation.html.haml (21.9ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.5ms)
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml (19.0ms)
+Completed 406 Not Acceptable in 416ms (Views: 391.4ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/admin/article/new" for 127.0.0.1 at 2018-10-09 12:20:59 +0700
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k6Wky9zI/JfPzeJE3FEdMCodnVXVKpWcEPKFWlYRBCoMdB2CkknPC53wGT4ro/BvCGJGbrr4VOdSMKuOP95Alg==", "article"=>{"title"=>"sdfssdfsf", "text"=>"sdfasf", "comment_ids"=>["", ""]}, "return_to"=>"http://localhost:3000/admin/article", "_save"=>"", "model_name"=>"article"}
+  [1m[36mComment Load (2.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE 1=0[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[36mArticle Create (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "sdfssdfsf"], ["text", "sdfasf"], ["created_at", "2018-10-09 05:20:59.823214"], ["updated_at", "2018-10-09 05:20:59.823214"]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[35m (78.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+Redirected to http://localhost:3000/admin/article
+Completed 302 Found in 101ms (ActiveRecord: 81.4ms)
+
+
+Started GET "/admin/article" for 127.0.0.1 at 2018-10-09 12:20:59 +0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"article"}
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY articles.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml:95
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 2]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (93.2ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.3ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_navigation.html.haml (14.5ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (17.7ms)
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml (11.8ms)
+Completed 200 OK in 341ms (Views: 330.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/comment?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-10-09 12:21:15 +0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"comment"}
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY comments.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml:95
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (73.9ms)
+Completed 200 OK in 103ms (Views: 89.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/article?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-10-09 12:21:19 +0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"article"}
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY articles.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml:95
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 2]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (89.9ms)
+Completed 200 OK in 117ms (Views: 104.1ms | ActiveRecord: 2.3ms)
+
+
+  [1m[35m (56.8ms)[0m  [1m[35mCREATE DATABASE "blog_development" ENCODING = 'unicode'[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "blog_test" ENCODING = 'unicode'[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(892336952976185220)[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(892336952976185220)[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bin/rake:23
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 13:06:24 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 550ms (Views: 517.4ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 13:21:11 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 531ms (Views: 504.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 13:21:16 +0700
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x0000564128669288@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 13:21:18 +0700
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x0000564128669288@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 13:21:22 +0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (11.0ms)
+  Rendered articles/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 98ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 13:21:31 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l5hwIkGnSl+zxq/5hDT5HBBpvMPMuOdcwUeCLTIacTBfpW4z3UlrvlgcJYACS0I2U9aymrHIKhpnleB+iezemA==", "article"=>{"title"=>"helo", "text"=>"askdjsdj\r\nsdfcsd"}, "commit"=>"Create Article"}
+Filter chain halted as #<Proc:0x0000564128669288@/home/nesya/.rvm/gems/ruby-2.5.0/gems/actionpack-5.2.1/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 13:21:31 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l5hwIkGnSl+zxq/5hDT5HBBpvMPMuOdcwUeCLTIacTBfpW4z3UlrvlgcJYACS0I2U9aymrHIKhpnleB+iezemA==", "article"=>{"title"=>"helo", "text"=>"askdjsdj\r\nsdfcsd"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/articles_controller.rb:23
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.5ms)
+  Rendered articles/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 61ms (Views: 56.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 13:22:56 +0700
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ivZrPHfe8xed8q8tpNvHAy0kdUdJTMuhmXRiX3l1v5UVJ9J1OV/Ai8/PVFdTKSpcD1uufCaeCtrbtkyLELr7KQ==", "article"=>{"title"=>"helo", "text"=>"askdjsdj\r\nsdfcsd"}, "commit"=>"Create Article"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/articles_controller.rb:23
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (9.8ms)
+  Rendered articles/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 608ms (Views: 554.6ms | ActiveRecord: 11.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 13:22:58 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IDQLNUwnuEYWjDgYJYnoRSNq3whZjkjMuYZ8kwHaTmO/5bJ8AqaL2kSxw2LSewUaARUEMzZcibf7RFJHaBUK3w==", "article"=>{"title"=>"helo", "text"=>"askdjsdj\r\nsdfcsd"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/articles_controller.rb:23
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.6ms)
+  Rendered articles/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 76ms (Views: 70.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 13:23:31 +0700
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 92ms (Views: 88.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 13:23:34 +0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (6.0ms)
+  Rendered articles/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 13:23:39 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1yiTkK+yLmlIjycTf5by/AYJmPlihJ9qH+AAW1njYxgfFY2BM1wPiKNVrWr56UnWRbaWoB/0Uiy5MmII4hXMsA==", "article"=>{"title"=>"kjj", "text"=>"jklb"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/articles_controller.rb:23
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.4ms)
+  Rendered articles/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 62ms (Views: 56.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 13:30:00 +0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 532ms (Views: 503.1ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 13:30:15 +0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (36.7ms)
+  Rendered articles/new.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 13:30:25 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3jwn5LRFMeldjdMZEpYbmmmokc4ZV8mMO4TgqbXLlv0WATn1KKsQCLZXWWCU6aCwKhefl2QnBMqdVoL6Dj05VQ==", "article"=>{"title"=>"ha", "text"=>"sadasd"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/articles_controller.rb:23
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.7ms)
+  Rendered articles/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 13:30:29 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PH0vEfjMh7PQzQDyFB3vdlDu+7R+xnkGXC7ma9fle8SjrJZYtk20L4Lw+4jj7wIpcpEgjxEUuH0e7Mi/vio/eA==", "article"=>{"title"=>"hasd", "text"=>"sadasd"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[36mArticle Create (1.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "hasd"], ["text", "sadasd"], ["created_at", "2018-10-09 06:30:29.579658"], ["updated_at", "2018-10-09 06:30:29.579658"]]
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (40.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:23
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 49ms (ActiveRecord: 41.7ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2018-10-09 13:30:29 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 3]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (26.9ms)
+  Rendered articles/show.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 105ms (Views: 84.7ms | ActiveRecord: 16.4ms)
+
+
+Started POST "/articles/3/comments" for 127.0.0.1 at 2018-10-09 13:30:36 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9cn0F4zW71Pjmag7pySLzYK69l0SWlWQM8YnUgsnjcpqGE1ewlfcz7GkU0FQ1maSoMUtZn2IlOtxBAmGYujJdg==", "comment"=>{"commenter"=>"asd", "body"=>"asda"}, "commit"=>"Create Comment", "article_id"=>"3"}
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (1.1ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", "asd"], ["body", "asda"], ["article_id", 3], ["created_at", "2018-10-09 06:30:36.640869"], ["updated_at", "2018-10-09 06:30:36.640869"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (101.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 112ms (ActiveRecord: 103.7ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2018-10-09 13:30:36 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 3]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [1 times] (1.1ms)
+  Rendered comments/_form.html.erb (4.0ms)
+  Rendered articles/show.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 72ms (Views: 67.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 13:30:39 +0700
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (4.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 60ms (Views: 53.8ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-10-09 13:30:45 +0700
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (34.8ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.0ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_navigation.html.haml (15.1ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.9ms)
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml (7.5ms)
+Completed 200 OK in 825ms (Views: 427.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2018-10-09 13:31:50 +0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (35.2ms)
+Completed 500 Internal Server Error in 1185ms (ActiveRecord: 17.8ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: rails_admin/themes/rollincode/variables.
+Load paths:
+  /home/nesya/Documents/dolananku/nesya-sesi5/pr-sesi6/blog-postgre/app/assets/config
+  /home/nesya/Documents/dolananku/nesya-sesi5/pr-sesi6/blog-postgre/app/assets/images
+  /home/nesya/Documents/dolananku/nesya-sesi5/pr-sesi6/blog-postgre/app/assets/javascripts
+  /home/nesya/Documents/dolananku/nesya-sesi5/pr-sesi6/blog-postgre/app/assets/stylesheets
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/assets/images
+  /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/assets/javascripts
+  /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/assets/stylesheets
+  /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/vendor/assets/javascripts
+  /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/vendor/assets/stylesheets
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/remotipart-1.4.2/vendor/assets/javascripts
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/nested_form-0.3.2/vendor/assets/javascripts
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/font-awesome-rails-4.7.0.4/app/assets/fonts
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/font-awesome-rails-4.7.0.4/app/assets/stylesheets
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/actionview-5.2.1/lib/assets/compiled
+  /home/nesya/.rvm/gems/ruby-2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/nesya/Documents/dolananku/nesya-sesi5/pr-sesi6/blog-postgre/node_modules
+  /home/nesya/Documents/dolananku/nesya-sesi5/pr-sesi6/vendor/assets/stylesheets):
+     6:     %meta{content: "width=device-width, initial-scale=1", name: "viewport; charset=utf-8"}
+     7:     %meta{content: "NONE,NOARCHIVE", name: "robots"}
+     8:     = csrf_meta_tag
+     9:     = stylesheet_link_tag "rails_admin/rails_admin.css", media: :all
+    10:     = javascript_include_tag "rails_admin/rails_admin.js"
+    11:   %body.rails_admin
+    12:     #admin-js{:'data-i18n-options' => I18n.t("admin.js").to_json}
+  
+/home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/assets/stylesheets/rails_admin/rails_admin.scss.erb:39
+sass (3.6.0) lib/sass/tree/import_node.rb:67:in `rescue in import'
+sass (3.6.0) lib/sass/tree/import_node.rb:44:in `import'
+sass (3.6.0) lib/sass/tree/import_node.rb:28:in `imported_file'
+sass (3.6.0) lib/sass/tree/import_node.rb:37:in `css_import?'
+sass (3.6.0) lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+sass (3.6.0) lib/sass/tree/visitors/base.rb:36:in `visit'
+sass (3.6.0) lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+sass (3.6.0) lib/sass/stack.rb:79:in `block in with_base'
+sass (3.6.0) lib/sass/stack.rb:135:in `with_frame'
+sass (3.6.0) lib/sass/stack.rb:79:in `with_base'
+sass (3.6.0) lib/sass/tree/visitors/perform.rb:158:in `visit'
+sass (3.6.0) lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+sass (3.6.0) lib/sass/tree/visitors/base.rb:52:in `map'
+sass (3.6.0) lib/sass/tree/visitors/base.rb:52:in `visit_children'
+sass (3.6.0) lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+sass (3.6.0) lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+sass (3.6.0) lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+sass (3.6.0) lib/sass/tree/visitors/base.rb:36:in `block in visit'
+sass (3.6.0) lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+sass (3.6.0) lib/sass/tree/visitors/base.rb:36:in `visit'
+sass (3.6.0) lib/sass/tree/visitors/perform.rb:157:in `visit'
+sass (3.6.0) lib/sass/tree/visitors/perform.rb:10:in `visit'
+sass (3.6.0) lib/sass/tree/root_node.rb:36:in `css_tree'
+sass (3.6.0) lib/sass/tree/root_node.rb:20:in `render'
+sass (3.6.0) lib/sass/engine.rb:290:in `render'
+sass-rails (5.0.7) lib/sass/rails/template.rb:47:in `evaluate'
+tilt (2.0.8) lib/tilt/template.rb:109:in `render'
+sprockets (3.7.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+sprockets (3.7.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+sprockets (3.7.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+sprockets (3.7.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+sprockets (3.7.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+sprockets (3.7.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+sprockets (3.7.2) lib/sprockets/loader.rb:60:in `block in load'
+sprockets (3.7.2) lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
+sprockets (3.7.2) lib/sprockets/loader.rb:44:in `load'
+sprockets (3.7.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+sprockets (3.7.2) lib/sprockets/cached_environment.rb:47:in `load'
+sprockets (3.7.2) lib/sprockets/bundle.rb:23:in `block in call'
+sprockets (3.7.2) lib/sprockets/utils.rb:200:in `dfs'
+sprockets (3.7.2) lib/sprockets/bundle.rb:24:in `call'
+sprockets (3.7.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+sprockets (3.7.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+sprockets (3.7.2) lib/sprockets/processor_utils.rb:56:in `reverse_each'
+sprockets (3.7.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+sprockets (3.7.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+sprockets (3.7.2) lib/sprockets/loader.rb:60:in `block in load'
+sprockets (3.7.2) lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
+sprockets (3.7.2) lib/sprockets/loader.rb:44:in `load'
+sprockets (3.7.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+sprockets (3.7.2) lib/sprockets/cached_environment.rb:47:in `load'
+sprockets (3.7.2) lib/sprockets/base.rb:66:in `find_asset'
+sprockets (3.7.2) lib/sprockets/base.rb:92:in `[]'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:355:in `find_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:347:in `find_debug_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:229:in `block in lookup_debug_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:242:in `block in resolve_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:241:in `each'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:241:in `detect'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:241:in `resolve_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:228:in `lookup_debug_asset'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:170:in `block in stylesheet_link_tag'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:169:in `map'
+sprockets-rails (3.2.1) lib/sprockets/rails/helper.rb:169:in `stylesheet_link_tag'
+/home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/application.html.haml:9:in `__home_nesya__rvm_gems_ruby_______bundler_gems_rails_admin____dcb__ee___app_views_layouts_rails_admin_application_html_haml___946460252622410314_70149173314500'
+actionview (5.2.1) lib/action_view/template.rb:159:in `block in render'
+activesupport (5.2.1) lib/active_support/notifications.rb:170:in `instrument'
+actionview (5.2.1) lib/action_view/template.rb:354:in `instrument_render_template'
+actionview (5.2.1) lib/action_view/template.rb:157:in `render'
+actionview (5.2.1) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+actionview (5.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+actionview (5.2.1) lib/action_view/renderer/template_renderer.rb:16:in `render'
+actionview (5.2.1) lib/action_view/renderer/renderer.rb:44:in `render_template'
+actionview (5.2.1) lib/action_view/renderer/renderer.rb:25:in `render'
+actionview (5.2.1) lib/action_view/rendering.rb:103:in `_render_template'
+actionpack (5.2.1) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+actionview (5.2.1) lib/action_view/rendering.rb:84:in `render_to_body'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.2.1) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (5.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block (2 levels) in render'
+activesupport (5.2.1) lib/active_support/core_ext/benchmark.rb:14:in `block in ms'
+/usr/share/rvm/rubies/ruby-2.5.0/lib/ruby/2.5.0/benchmark.rb:308:in `realtime'
+activesupport (5.2.1) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:46:in `block in render'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:31:in `cleanup_view_runtime'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:45:in `render'
+remotipart (1.4.2) lib/remotipart/render_overrides.rb:16:in `render_with_remotipart'
+/home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:37:in `block (2 levels) in <class:Dashboard>'
+/home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/controllers/rails_admin/main_controller.rb:22:in `instance_eval'
+/home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/controllers/rails_admin/main_controller.rb:22:in `dashboard'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+railties (5.2.1) lib/rails/railtie.rb:190:in `public_send'
+railties (5.2.1) lib/rails/railtie.rb:190:in `method_missing'
+actionpack (5.2.1) lib/action_dispatch/routing/mapper.rb:19:in `block in <class:Constraints>'
+actionpack (5.2.1) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+remotipart (1.4.2) lib/remotipart/middleware.rb:32:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/admin" for 127.0.0.1 at 2018-10-09 14:03:54 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/admin" for 127.0.0.1 at 2018-10-09 14:04:23 +0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "articles"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY "comments"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/actions/dashboard.rb:34
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (25.1ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.7ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_navigation.html.haml (13.3ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.8ms)
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml (11.0ms)
+Completed 200 OK in 1288ms (Views: 732.8ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/admin/comment?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-10-09 14:04:32 +0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"comment"}
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" ORDER BY comments.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml:95
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 3]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml:95
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (110.0ms)
+Completed 200 OK in 143ms (Views: 129.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/article?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-10-09 14:17:52 +0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"article"}
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY articles.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml:95
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 3]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 2]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (112.9ms)
+Completed 200 OK in 136ms (Views: 122.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/admin/article/3/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-10-09 14:18:13 +0700
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"article", "id"=>"3"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 ORDER BY "articles"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:16
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_field.html.haml (3.4ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_text.html.haml (4.7ms)
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 3]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_filtering_multiselect.html.haml:10
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments"[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:43
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY comments.id desc[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_filtering_multiselect.html.haml:20
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 3]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_filtering_multiselect.html.haml:20
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (22.2ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/_submit_buttons.html.haml (29.8ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (82.9ms)
+Completed 200 OK in 123ms (Views: 106.5ms | ActiveRecord: 3.1ms)
+
+
+Started PUT "/admin/article/3/edit" for 127.0.0.1 at 2018-10-09 14:18:17 +0700
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TDcWSV1AsDCrk1Ic0Oee93+Z+2hh/drxKiZaynyggNcUs2PiI7HB6H283MmBTTXSFIWIRrca0ubqBtg/AxivlQ==", "article"=>{"title"=>"hasdasa", "text"=>"sadasd", "comment_ids"=>["", "", "2"]}, "return_to"=>"http://localhost:3000/admin/article", "_save"=>"", "model_name"=>"article", "id"=>"3"}
+  [1m[36mArticle Load (3.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 ORDER BY "articles"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:16
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 2]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:19
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 3]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[36mArticle Update (0.8ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["title", "hasdasa"], ["updated_at", "2018-10-09 07:18:17.839946"], ["id", 3]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+  [1m[35m (54.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:23
+Redirected to http://localhost:3000/admin/article
+Completed 302 Found in 87ms (ActiveRecord: 60.5ms)
+
+
+Started GET "/admin/article" for 127.0.0.1 at 2018-10-09 14:18:17 +0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"article"}
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY articles.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml:95
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 3]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 2]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/config/fields/association.rb:19
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (92.2ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.3ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_navigation.html.haml (13.8ms)
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (9.5ms)
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/layouts/rails_admin/pjax.html.haml (14.6ms)
+Completed 200 OK in 353ms (Views: 341.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/comment/2?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2018-10-09 14:18:23 +0700
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"comment", "id"=>"2"}
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 ORDER BY "comments"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record.rb:16
+  Rendering /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/lib/rails_admin/adapters/active_record/abstract_object.rb:27
+  Rendered /home/nesya/.rvm/gems/ruby-2.5.0/bundler/gems/rails_admin-875dcb49ee47/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (17.0ms)
+Completed 200 OK in 57ms (Views: 42.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 14:20:08 +0700
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 14:20:10 +0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (22.6ms)
+  Rendered articles/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 85ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 14:20:16 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UqWm6W3ZEQeozfbKL5Jr+KaJzsxejmwz1QafKEpr+BSamLj48Tcw5kMXfLOp7dDS5TbAlSP+oXVz1P178Z1XvA==", "article"=>{"title"=>"", "text"=>"sdfsdf"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/articles_controller.rb:23
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (3.3ms)
+  Rendered articles/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 53ms (Views: 47.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 14:21:13 +0700
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 14:21:15 +0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (4.5ms)
+  Rendered articles/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 14:21:20 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9+iHYxvnq7jNpRUU1EEl+stAYqw5k7qcgutb5sRb6wg/1ZlyhwmKWSZ/n21SPp7QiP9s9UTjd9okOTm1f61EoA==", "article"=>{"title"=>"zxc", "text"=>"sdcf"}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[36mArticle Create (0.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "zxc"], ["text", "sdcf"], ["created_at", "2018-10-09 07:21:20.243071"], ["updated_at", "2018-10-09 07:21:20.243071"]]
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (95.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:23
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 103ms (ActiveRecord: 95.9ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-10-09 14:21:20 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered articles/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 49ms (Views: 44.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/articles/4/comments" for 127.0.0.1 at 2018-10-09 14:21:23 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VwGktl3xa2HJbssGAITbv4+EXvUREAIyV41lfoot1RXI0B3/E3BY/ZtTMHz3djbgrfuFzn7Cw0kVT0uq4+KRqQ==", "comment"=>{"commenter"=>"", "body"=>"zx"}, "commit"=>"Create Comment", "article_id"=>"4"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", ""], ["body", "zx"], ["article_id", 4], ["created_at", "2018-10-09 07:21:23.857719"], ["updated_at", "2018-10-09 07:21:23.857719"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (53.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 64ms (ActiveRecord: 55.4ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-10-09 14:21:23 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [1 times] (1.1ms)
+  Rendered comments/_form.html.erb (4.5ms)
+  Rendered articles/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 78ms (Views: 73.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/articles/4/comments" for 127.0.0.1 at 2018-10-09 14:21:28 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"go9m8VeEHRb/+phMmK4odqeb78Kl+jsvSOWso3ppBUsdXt+4GQUuiq3HYzZvXMUpheQ0+coo+lQKJ4J3E6ZB9w==", "comment"=>{"commenter"=>"zx", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"4"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", "zx"], ["body", ""], ["article_id", 4], ["created_at", "2018-10-09 07:21:28.108623"], ["updated_at", "2018-10-09 07:21:28.108623"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (17.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 31ms (ActiveRecord: 19.2ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-10-09 14:21:28 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [2 times] (3.1ms)
+  Rendered comments/_form.html.erb (5.4ms)
+  Rendered articles/show.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 70ms (Views: 63.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-10-09 14:23:24 +0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [2 times] (3.9ms)
+  Rendered comments/_form.html.erb (17.6ms)
+  Rendered articles/show.html.erb within layouts/application (64.9ms)
+Completed 200 OK in 567ms (Views: 512.8ms | ActiveRecord: 14.2ms)
+
+
+Started POST "/articles/4/comments" for 127.0.0.1 at 2018-10-09 14:23:30 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n+9ESzkrKZWSQG7TMgvlwafAj4wqeB3Gmsk35+8jNDUAPv0Cd6oaCcB9lanF+Qiehb9Ut0Wq3L3YCxkzhuxwiQ==", "comment"=>{"commenter"=>"as", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"4"}
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", "as"], ["body", ""], ["article_id", 4], ["created_at", "2018-10-09 07:23:30.434937"], ["updated_at", "2018-10-09 07:23:30.434937"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (61.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 72ms (ActiveRecord: 64.3ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-10-09 14:23:30 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [3 times] (2.0ms)
+  Rendered comments/_form.html.erb (2.9ms)
+  Rendered articles/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 82ms (Views: 77.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-10-09 14:25:08 +0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [3 times] (3.0ms)
+  Rendered comments/_form.html.erb (20.6ms)
+  Rendered articles/show.html.erb within layouts/application (70.9ms)
+Completed 200 OK in 581ms (Views: 531.7ms | ActiveRecord: 15.3ms)
+
+
+Started POST "/articles/4/comments" for 127.0.0.1 at 2018-10-09 14:26:34 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"18chVToQ7VtyT1MHQnzwI/thRUfu7uuq2ku09hoq83JIFpgcdJHexyByqH21jh182R6efIE8KtGYiZoic+W3zg==", "comment"=>{"commenter"=>"asda", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"4"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", "asda"], ["body", ""], ["article_id", 4], ["created_at", "2018-10-09 07:26:34.924907"], ["updated_at", "2018-10-09 07:26:34.924907"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (59.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 71ms (ActiveRecord: 61.0ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-10-09 14:26:34 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [4 times] (3.8ms)
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered articles/show.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-10-09 14:27:58 +0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [4 times] (5.3ms)
+  Rendered comments/_form.html.erb (22.1ms)
+  Rendered articles/show.html.erb within layouts/application (82.6ms)
+Completed 200 OK in 604ms (Views: 555.0ms | ActiveRecord: 12.2ms)
+
+
+Started POST "/articles/4/comments" for 127.0.0.1 at 2018-10-09 14:28:04 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XBsIKL3dN7nSTnrRrvGpbKQ8bW/nyJ2QpOWNhfyuYwnDyrFh81wEJYBzgatZA0QzhkO2VIgaXOvmJ6NRlWEntQ==", "comment"=>{"commenter"=>"aaa", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"4"}
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (1.2ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", "aaa"], ["body", ""], ["article_id", 4], ["created_at", "2018-10-09 07:28:04.088737"], ["updated_at", "2018-10-09 07:28:04.088737"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (32.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 46ms (ActiveRecord: 35.7ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2018-10-09 14:28:04 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 4]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [5 times] (2.0ms)
+  Rendered comments/_form.html.erb (3.7ms)
+  Rendered articles/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/4/comments" for 127.0.0.1 at 2018-10-09 14:34:42 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for CommentsController):
+  
+actionpack (5.2.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call'
+remotipart (1.4.2) lib/remotipart/middleware.rb:32:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 14:34:48 +0700
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 463ms (Views: 420.2ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 14:34:51 +0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (9.3ms)
+  Rendered articles/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 14:34:54 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1zlRHyWCJVtba0+oqYCA8dH8iTR7R5ZRzqa0He5KsSUfBE8OuWwEurCxxdEv/zvbkkOHbQY3WxdodNZOVbwejQ==", "article"=>{"title"=>"", "text"=>""}, "commit"=>"Create Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/articles_controller.rb:23
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (5.7ms)
+  Rendered articles/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 93ms (Views: 85.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 14:35:00 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8y7hq2CjPKIWyTtyWISerdX5ZIBemjnnKcLu8vOqvfZs/1jiLiIPPkT0wAivdnPy94a/uzFI+JxrAMAmmmX5Sg==", "article"=>{"title"=>"asdsa", "text"=>"adfqae"}, "commit"=>"Create Article"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[36mArticle Create (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "asdsa"], ["text", "adfqae"], ["created_at", "2018-10-09 07:35:00.309050"], ["updated_at", "2018-10-09 07:35:00.309050"]]
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (84.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:23
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 93ms (ActiveRecord: 85.7ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2018-10-09 14:35:00 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 5]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (24.1ms)
+  Rendered articles/show.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 92ms (Views: 80.9ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/articles/5/comments" for 127.0.0.1 at 2018-10-09 14:35:02 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9J/3nXeAzxfwm3QW1vydjXHzAIPxL8NSJkR+oILKKWtrTk7UOQH8i6Kmj2whDnDSU4zbuJ79AilkhlB06wVt1w==", "comment"=>{"commenter"=>"", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"5"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (1.1ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", ""], ["body", ""], ["article_id", 5], ["created_at", "2018-10-09 07:35:02.766447"], ["updated_at", "2018-10-09 07:35:02.766447"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (22.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 34ms (ActiveRecord: 24.6ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2018-10-09 14:35:02 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 5]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [1 times] (1.1ms)
+  Rendered comments/_form.html.erb (6.6ms)
+  Rendered articles/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 63ms (Views: 58.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2018-10-09 14:37:20 +0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 5]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [1 times] (2.3ms)
+  Rendered comments/_form.html.erb (18.7ms)
+  Rendered articles/show.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 587ms (Views: 537.6ms | ActiveRecord: 14.8ms)
+
+
+Started POST "/articles/5/comments" for 127.0.0.1 at 2018-10-09 14:37:23 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mMoMgf5K8Qt5836AOjHhJnPtoACneUig6BcDWr/b/7kHG7XIsMvClyvOhfrNwwx5UZJ7O8iriduq1S2O1hS7BQ==", "comment"=>{"commenter"=>"", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"5"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `comment' for #<Comment:0x00007f92ae4bfbc0>
+Did you mean?  commenter):
+  
+app/controllers/comments_controller.rb:6:in `create'
+Started GET "/articles" for 127.0.0.1 at 2018-10-09 14:39:07 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 474ms (Views: 451.6ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-10-09 14:39:12 +0700
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (9.4ms)
+  Rendered articles/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-10-09 14:39:19 +0700
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PwIYYWl/PB6/1nZJs/QP4PVLg7/l1YvlyrLpNVZqHPv3PwZw9ZEd/1QM/DA1i7TKtvSN5pilRqNsYItm7ZyzUw==", "article"=>{"title"=>"sdfseee", "text"=>"sadf"}, "commit"=>"Create Article"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[36mArticle Create (1.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "sdfseee"], ["text", "sadf"], ["created_at", "2018-10-09 07:39:19.935116"], ["updated_at", "2018-10-09 07:39:19.935116"]]
+  ↳ app/controllers/articles_controller.rb:23
+  [1m[35m (80.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:23
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 92ms (ActiveRecord: 82.7ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:39:20 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (28.5ms)
+  Rendered articles/show.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 127ms (Views: 103.4ms | ActiveRecord: 14.2ms)
+
+
+Started POST "/articles/6/comments" for 127.0.0.1 at 2018-10-09 14:39:23 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mAa1jWPrxTnU84r2uaXiNZ7+hoEmbb1JM2uCx3bf+7EH1wzELWr2pYbOcYxOVw9qvIFdukm/fDJxqawTHxC/DQ==", "comment"=>{"commenter"=>"", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 10ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:39:23 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (3.0ms)
+  Rendered articles/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 58ms (Views: 53.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/articles/6/comments" for 127.0.0.1 at 2018-10-09 14:39:25 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SnRgWLiweAVRWhT2NPDu7y+VoEgeM7Rluv9SjiPT+s/VpdkR9jFLmQNn74zDAgOwDep7c3HhdR74PXxaShy+cw==", "comment"=>{"commenter"=>"", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"6"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 8ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:39:25 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (4.7ms)
+  Rendered articles/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 67ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:39:49 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (37.8ms)
+  Rendered articles/show.html.erb within layouts/application (57.5ms)
+Completed 200 OK in 553ms (Views: 505.2ms | ActiveRecord: 12.1ms)
+
+
+Started POST "/articles/6/comments" for 127.0.0.1 at 2018-10-09 14:39:52 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6bXWGkSo1Bn1SYkEyGfzfTb6Z3IdBMbQ3KE2OouPlm92ZG9TCinnhad0cn4/lR4iFIW8SXLWB6ueYxju4kDS0w==", "comment"=>{"commenter"=>"", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"6"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 11ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:39:52 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (3.1ms)
+  Rendered articles/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 60ms (Views: 55.4ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/articles/6/comments" for 127.0.0.1 at 2018-10-09 14:39:56 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2yu68XgF6CA+59m6REZKuG+bu4ZjdOdJchcYKZrO5mpE+gO4NoTbvGzaIsCztKfnTeRgvQymJjIw1Tb98wGi1g==", "comment"=>{"commenter"=>"sd", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"6"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (1.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 10ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:39:56 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (6.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (3.9ms)
+  Rendered articles/show.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 78ms (Views: 68.5ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/articles/6/comments" for 127.0.0.1 at 2018-10-09 14:40:00 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5eGZxLZOCq63XkcKXLC5+EDdauYyRienLpl2CBxw6Dl6MCCN+M85MuVjvHCrQlSnYqKx3V2U5txsW1jcdb+shQ==", "comment"=>{"commenter"=>"", "body"=>"adfsaef"}, "commit"=>"Create Comment", "article_id"=>"6"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (1.2ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", ""], ["body", "adfsaef"], ["article_id", 6], ["created_at", "2018-10-09 07:40:00.444753"], ["updated_at", "2018-10-09 07:40:00.444753"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (58.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 69ms (ActiveRecord: 60.2ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:40:00 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [1 times] (1.2ms)
+  Rendered comments/_form.html.erb (3.1ms)
+  Rendered articles/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 71ms (Views: 65.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/articles/6/comments" for 127.0.0.1 at 2018-10-09 14:41:13 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZANjU0xfK1leN08f3i7i7dJH/tC8YhzW7sci8hzycVT70toaAt4YxQwKtGUp3A+y8Dgl69Ow3a2sBQwmdT016A==", "comment"=>{"commenter"=>"", "body"=>"sfd"}, "commit"=>"Create Comment", "article_id"=>"6"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[36mComment Create (1.2ms)[0m  [1m[32mINSERT INTO "comments" ("commenter", "body", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["commenter", ""], ["body", "sfd"], ["article_id", 6], ["created_at", "2018-10-09 07:41:13.626812"], ["updated_at", "2018-10-09 07:41:13.626812"]]
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (62.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 122ms (ActiveRecord: 79.6ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:41:13 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [2 times] (1.8ms)
+  Rendered comments/_form.html.erb (5.7ms)
+  Rendered articles/show.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 68ms (Views: 62.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/articles/6/comments" for 127.0.0.1 at 2018-10-09 14:41:19 +0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tbx0paHWdceKJTZnYqmynhLSP37clwaUYiFUdePoRI7Sbc3s71dGW9gYzR2VW1/BMK3kRbNFx+8g43qhiicAMg==", "comment"=>{"commenter"=>"zcxzds", "body"=>""}, "commit"=>"Create Comment", "article_id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:6
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/comments_controller.rb:6
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 9ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:41:19 +0700
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 6]]
+  ↳ app/views/articles/show.html.erb:13
+  Rendered collection of comments/_comment.html.erb [2 times] (5.0ms)
+  Rendered comments/_form.html.erb (3.2ms)
+  Rendered articles/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 63ms (Views: 59.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-10-09 14:42:31 +0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/nesya/.rvm/gems/ruby-2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 8.6ms)
+
+
+  
+ActionView::Template::Error (You need to supply at least one validation):
+    10: </p>
+    11:  
+    12: <h2>Comments</h2>
+    13: <%= render @article.comments %>
+    14:  
+    15: <h2>Add a comment:</h2>
+    16: <%= render 'comments/form' %>
+  
+app/models/comment.rb:3:in `<class:Comment>'
+app/models/comment.rb:1:in `<main>'
+app/views/articles/show.html.erb:13:in `_app_views_articles_show_html_erb___1544074658050153177_47373732520580'
